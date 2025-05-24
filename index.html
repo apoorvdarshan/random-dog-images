@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Dog Images</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="favicon.png" type="image/png" />
+  </head>
+  <body>
+    <h1>🕵️‍♂️ Unmask a New Mystery Pup! 🐾</h1>
+    <div class="button-row">
+      <button id="showBtn">Zoinks! Show Me!</button>
+      <a id="downloadBtn" download="mystery-dog.jpg">
+        <i class="fas fa-download"></i>
+      </a>
+    </div>
+
+    <img id="result" />
+
+    <footer class="social-footer">
+      <h2>Connect With Me</h2>
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/apoorvdarshan"
+          class="social-click"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://x.com/apoorvdarshan"
+          class="social-click"
+          target="_blank"
+          ><i class="fab fa-x-twitter"></i
+        ></a>
+        <a
+          href="https://github.com/apoorvdarshan/random-dog-images"
+          class="social-click"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/404apoorv"
+          class="social-click"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/@apoorvdarshan"
+          class="social-click"
+          target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="mailto:ad13dtu@gmail.com" class="social-click"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+      <p class="credit">Made by Apoorv Darshan</p>
+    </footer>
+
+    <audio id="clickSound" src="click-sound.mp3" preload="auto"></audio>
+
+    <script src="app.js"></script>
+  </body>
+</html>
