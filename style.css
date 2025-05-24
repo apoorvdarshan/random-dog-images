@@ -1,0 +1,252 @@
+/* Scooby-Doo Mystery Pup Theme */
+
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Luckiest Guy", cursive;
+  background: linear-gradient(135deg, #f9c74f, #90be6d);
+  color: #3d1e6d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Heading */
+h1 {
+  font-size: 3rem;
+  color: #3d1e6d;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 3px 3px #fef68f;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h1::after {
+  content: "🐾";
+  margin-left: 8px;
+  animation: pawBounce 1.2s infinite alternate;
+}
+
+/* Button */
+button {
+  background-color: #f76767;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #802b00;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 2rem;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 0 #802b00;
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 0 #802b00;
+  background-color: #d94f4f;
+}
+
+/* Image Styling */
+img#result {
+  max-width: 90%;
+  max-height: 450px;
+  border-radius: 16px;
+  border: 6px solid #8e44ad;
+  background-color: #fff8e1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.8s ease;
+
+  /* ✅ Add this line: */
+  margin-bottom: 3rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pawBounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Social Footer */
+
+footer.social-footer {
+  width: 100%;
+  background: #3d1e6d;
+  color: #ffcb77;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.2);
+  margin-top: auto;
+}
+
+footer.social-footer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 1px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-click {
+  color: #fff;
+  font-size: 1.8rem;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.social-click:hover {
+  color: #f9c74f;
+  transform: scale(1.2);
+}
+
+.social-click:active {
+  transform: scale(0.95);
+  color: #ffd166;
+}
+
+.credit {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+
+  .button-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  button,
+  #downloadBtn {
+    width: 90%;
+  }
+
+  img#result {
+    max-height: 300px;
+  }
+
+  .social-icons {
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-click {
+    font-size: 1.5rem;
+  }
+
+  footer.social-footer h2 {
+    font-size: 1.4rem;
+  }
+
+  .credit {
+    font-size: 0.75rem;
+  }
+}
+
+.button-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#downloadBtn {
+  display: none; /* hidden initially */
+  background-color: #6a5acd;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  box-shadow: 0 5px 0 #3d1e6d;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+  align-items: center;
+  justify-content: center;
+  height: 48px; /* match button height */
+  transform: translateY(-17px);
+}
+
+#downloadBtn:hover {
+  background-color: #836fff;
+  transform: translateY(-2px);
+}
+
+#downloadBtn:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 0 #3d1e6d;
+}
+
+#downloadBtn.show {
+  display: flex;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
