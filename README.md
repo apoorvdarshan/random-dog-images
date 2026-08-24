@@ -4,11 +4,11 @@ A playful and responsive web app that fetches random dog images using the [Dog C
 
 ## 🔗 Live Demo
 
-🌐 [https://apoorvdarshan.github.io/random-dog-images](https://apoorvdarshan.github.io/random-dog-images)
+🌐 [https://random-dog-images.aopv.dev](https://random-dog-images.aopv.dev)
 
 ## 💻 Source Code
 
-📂 [https://github.com/apoorvdarshan/random-dog-images](https://github.com/apoorvdarshan/random-dog-images)
+📂 [https://github.com/aopv/random-dog-images](https://github.com/aopv/random-dog-images)
 
 ---
 
@@ -43,5 +43,5 @@ Open to feedback and paw-sitive improvements 🐾
 
 ## 💬 Connect
 
-Created by [Apoorv Darshan](https://github.com/apoorvdarshan)  
+Created by [Apoorv Darshan](https://github.com/aopv)  
 Connect through links in the footer or GitHub profile.
